@@ -1,0 +1,122 @@
+<div class="all">
+<div class="container p-3 new">
+    <h1>Welcome</h1>
+</div>
+
+
+<!-- show -->
+<div class="container p-3 ">
+    <input type="button" class="btn btn-primary mt-2" value="Show" ng-click="show2()">
+    <input type="button" class="btn btn-primary mt-2" value="Bevarage" ng-click="Bevarage()">
+</div>
+
+<div class="container p-4 mt-5" ng-show="show1">
+    <table>
+        <tr class="text-center">
+            <th >
+                <h3 class="col">Movie</h3>
+            </th>
+            <th class="table1">
+                <h3 class="tow">Time</h3>
+            </th>
+            <th class="table2">
+                <h3>Ticket Available</h3>
+            </th>
+        </tr>
+        <tr class="text-center " ng-repeat="x in movie1" ng-click="book(x)">
+            <td>
+                <h5>{{x.movie}} </h5>
+            </td>
+            <td class="time">
+                <h5>{{x.time}}</h5>
+            </td>
+            <td class="tic">
+                <h5>{{x.tickets}}</h5>
+            </td>
+
+
+
+        </tr>
+    </table>
+
+    <div class="container p-4 text-center" ng-show="movie12">
+        <h2 class="mov">Select Number of Tickets for:{{uu.movie}}</h2>
+        <table class="text-center mt-4">
+            <tr>
+                <td ><h3>{{ticketrate}}</h3></td>
+                <td class="ap"><h3>X</h3></td>
+                <td class="api"> <input type="number" ng-model="quantityticket"></td>
+                <td class="apis"><h3>{{ticketrate * quantityticket}}</h3></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="container text-center mt-5">
+        <h3 class="tee">Ticket Amount:{{ticketrate * quantityticket}}</h3>
+        <br>
+        <h3 class="tee">Bevarage:{{num2}}</h3>
+        <br>
+        <h3 class="tee">Total:{{ticketrate * quantityticket +  num2 }}</h3>
+    </div>
+
+<div class="text-center">
+
+    <a href="#!/book" class="btn1 btn btn-success">Book Ticket</a>
+</div>
+
+</div>
+
+
+
+
+
+<!-- bevarage -->
+
+<div class="container p-4 mt-5" ng-show="Bevarage1">
+    <table>
+        <tr class="text-center">
+            <th class="tqq">
+                <h3>Items</h3>
+            </th>
+            <th class="rat">
+                <h3>Rate</h3>
+            </th>
+            <th class="qua">
+                <h3>Quantity</h3>
+            </th>
+            <th class="qua1">
+                <h3>Quantity</h3>
+            </th>
+        </tr>
+        <tr class="text-center " ng-repeat="x in items">
+            <td>
+                <h5>{{x.item}} </h5>
+            </td>
+            <td class="time1">
+                <h5>{{x.rate}}</h5>
+            </td>
+            <td class="tic1"> <input type="number" min="0" ng-model="x.num" ng-click="num1()">
+            </td>
+            <td class="tic2">
+                <h5>{{x.num * x.rate}}</h5>
+            </td>
+           
+            <div class="mm">
+                <h3>Bevarage Total:{{num2}}</h3>
+            </div>
+
+
+        </tr>
+       
+    </table>
+
+    <div class="container p-3 text-center mt-5">
+        <input type="button" class="btn btn-primary mt-2" value="Select" ng-click="select()">
+    </div>
+
+    
+    
+</div>
+
+</div>

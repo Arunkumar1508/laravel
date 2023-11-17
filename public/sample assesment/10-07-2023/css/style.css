@@ -1,0 +1,15 @@
+/* .btn{
+    font-size: 20px;
+    background-color: green;
+    color: white;
+} */
+
+
+.rectangle{
+    height: 50px;
+    width: 450px;
+    border: 1px solid;
+    color: white;
+    text-align: center;
+}
+

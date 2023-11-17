@@ -1,0 +1,37 @@
+.hlo{
+ width: 50px;
+ height: 30px;
+}
+#area,#date{
+    width: 450px;
+    border: 2px solid black;
+    display: inline;
+}
+.navbar form svg{
+    margin-right: 25px;
+}
+.wow{
+    list-style: none;
+}
+.j1{
+    padding: 30px;
+}
+/* #text{
+    padding: 150px;
+}
+#text1{
+    padding: 150px;
+}
+#text2{
+    padding: 50px;
+}
+#text3{
+    padding: 100px;
+} */
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.oldTask1{
+    list-style: none;
+}

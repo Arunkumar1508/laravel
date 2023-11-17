@@ -1,0 +1,74 @@
+body{
+    
+    background: linear-gradient(to  right,#3d7eaa,#ffe47a )
+}
+.new{
+    text-shadow: 0 0 3px #FF0000;
+}
+.hlo{
+    background-color:#2980b9,#6dd5fa,#ffffff;
+    padding: 20px;
+}
+.table1{
+   padding-left: 430px;
+   color: rgb(29, 174, 179);
+   text-shadow: 0 0 8px #00d5ff;
+   /* padding: 10px; */
+}
+.col{
+    color: rgb(29, 174, 179);
+}
+.tow{
+    padding: 20px;
+    
+}
+.table2{
+    padding-left: 500px;
+    color: rgb(9, 151, 156);
+    text-shadow: 0 0 8px #dd00ff;
+}
+.time{
+    padding-left: 420px;
+    /* padding: 10px; */
+  
+}
+.mm{
+    color: rgb(0, 255, 157);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.tqq{
+    text-shadow: 0 0 8px #00ffbf;
+}
+.tic{
+    padding-left: 500px;
+}
+.rat{
+    padding-left: 230px; 
+    text-shadow: 0 0 8px #00ffbf;
+}
+.qua{
+    padding-left: 280px;
+    text-shadow: 0 0 8px #00ffbf;
+}
+.qua1{
+    padding-left: 300px;
+    text-shadow: 0 0 8px #00ffbf;
+}
+.time1{
+    padding-left: 230px;
+}
+.tic1,.tic2{
+    padding-left: 300px;
+}
+.ap,.api,.apis{
+    padding-left: 300px;    
+}
+.mov{
+    color: rgb(191, 128, 26);
+}
+/* .book{
+    background-color: rgb(74, 243, 255);
+} */
+.tee{
+    text-shadow: 0 0 9px #ffe600;
+}

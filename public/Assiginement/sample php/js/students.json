@@ -1,0 +1,35 @@
+{
+	"students": [
+		{
+			"name": "John",
+			"id": "1",
+			"image":"./img/download.jpg",
+			"price":1000
+			
+		},
+		{
+			"name": "Praveen",
+			"id": "2",
+			"image":"./img/download (1).jpg",
+			"price":2000
+		},
+		{
+			"name": "Somesh",
+			"id": "3",
+			"image":"./img/download (2).jpg",
+			"price":3000
+		},
+		{
+			"name": "Mebin",
+			"id": "4",
+			"image":"./img/download (3).jpg",
+			"price":4000
+		},
+		{
+			"name": "Jose",
+			"id": "5",
+			"image":"./img/download (4).jpg",
+			"price":5000
+		}
+	]
+}

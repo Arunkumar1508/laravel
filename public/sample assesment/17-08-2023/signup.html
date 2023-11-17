@@ -1,0 +1,31 @@
+<!-- {{message}} -->
+
+<form class="container you">
+  
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="name" class="form-control" id="name" ng-model="userName" >
+     
+    </div>
+    <div class="mb-3">
+      <label for="UPI" class="form-label">UPI ID</label>
+      <input type="UPI" class="form-control" id="UPI" ng-model="upi">
+      <button class="btn btn-primary mt-2" ng-click="upii()">UPI</button>
+    </div>
+    <div class="mb-3">
+        <label for="number" class="form-label">Phone number</label>
+        <input type="number" class="form-control" id="number" ng-model="number">
+        <button class="btn btn-primary mt-2" ng-click="num()">Phone number</button>
+      </div>
+      <div class="mb-3">
+        <label for="number" class="form-label">Account number</label>
+        <input type="number" class="form-control" id="Accountnumber" ng-model="account">
+        <button class="btn btn-primary mt-2" ng-click="ranAcc()">Acc</button>
+      </div>
+      <div class="sign " >
+    <button type="button" class="btn btn-primary" ng-click="regData()">Register</button>
+    <!-- <button type="button" class="btn btn-primary">Login </button> -->
+    
+        <a href="#!login " class="btn btn-primary">Login</a>
+    </div>
+  </form>

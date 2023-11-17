@@ -1,0 +1,64 @@
+{
+	"students": [
+		{
+			"img":"image/download.jpg",
+			"name": "Dora",
+			"id": "001",
+			"m1": 75,
+			"m2": 65,
+			"m3": 65,
+			"m4": 55,
+			"m5": 55
+		},
+		{
+			"img":"image/download (1).jpg",
+			"name": "Diego",
+			"id": "002",
+			"m1": 75,
+			"m2": 65,
+			"m3": 55,
+			"m4": 75,
+			"m5": 55
+		},
+		{
+			"img":"image/download (2).jpg",
+			"name": "Doremon",
+			"id": "003",
+			"m1": 75,
+			"m2": 65,
+			"m3": 55,
+			"m4": 55,
+			"m5": 77
+		},
+		{
+			"img":"image/download (3).jpg",
+			"name": "Narto",
+			"id": "004",
+			"m1": 75,
+			"m2": 65,
+			"m3": 55,
+			"m4": 56,
+			"m5": 55
+		},
+		{
+			"img":"image/download (4).jpg",
+			"name": "Nobitta",
+			"id": "005",
+			"m1": 75,
+			"m2": 65,
+			"m3": 87,
+			"m4": 55,
+			"m5": 89
+		},
+		{
+			"img":"image/download (5).jpg",
+			"name": "Pakachaciu",
+			"id": "006",
+			"m1": 75,
+			"m2": 65,
+			"m3": 87,
+			"m4": 55,
+			"m5": 89
+		}
+	]
+}

@@ -1,0 +1,29 @@
+ #data{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+ .card{
+    width: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+.card-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+} 
+.card-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-price{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.count-input{
+    width: 50px;
+}

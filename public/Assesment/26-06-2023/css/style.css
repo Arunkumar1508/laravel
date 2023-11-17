@@ -1,0 +1,57 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+  
+  
+.line{
+    border: 2px dotted black;
+}
+.hr{
+    border: 3px dotted rgb(153, 6, 6);
+}
+.pass{
+    border-bottom: 2px dotted black;
+}
+.form-check{
+    border-bottom: 2px dotted black;
+    border: 2px solid black;
+    background-color: darkcyan;
+}
+.prj{
+    border-bottom: 2px dotted black;
+    border: 2px solid black;
+    text-align: center;
+    background-color: aqua;
+}
+.prj1{
+    border: 2px solid black;
+    text-align: center;
+    width: 290px;
+    height: 200px;
+    background-color: tomato;
+}
+.icons{
+    font-size: 40px;
+}
+.back{
+    border-radius: circle;
+}
+.button{
+    background-color: aquamarine;
+}
+.box{
+    border: 2px dotted black;
+}
+.ii{
+    background-color: gold;
+}
+.font-family{
+    font-family: 'Freehand', cursive;
+    font-size: 22px;
+}
+.card-text{
+    font-family: 'Freehand', cursive;
+    font-size: 22px;
+}
+
+

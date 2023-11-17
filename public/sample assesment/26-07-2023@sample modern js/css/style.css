@@ -1,0 +1,77 @@
+/* body {
+	background: #d56c7d; 
+background: -webkit-linear-gradient(to right, #240b36, #c31432); 
+background: linear-gradient(to right, #240b36, #c31432); 
+} */
+/* table,tr,th,td{
+	color: white;
+	font-size: 30px;
+	padding: 20px;
+	border: 2px double aqua;
+	text-shadow: #c31432;
+	
+}
+
+th{
+	color: rgb(9, 244, 158);
+}
+.hlo{
+	color: rgb(255, 0, 76);
+	text-align: center;
+} */
+
+
+.card img{
+	height: 200px;
+	width: 190px;
+	/* border-radius: 50%; */
+	padding: 10px;
+} 
+.name{
+	/* border: 2px solid black; */
+	/* padding-right: 30px; */
+	padding: 10px;
+	
+}
+.m1{
+	/* border: 2px solid black; */
+	padding: 10px;
+	padding-left: 30px;
+}
+.m2{
+	padding: 10px;
+	padding-left: 30px;
+}
+.m3{
+	padding: 10px;
+	padding-left: 30px;
+}
+.m4{
+	padding: 10px;
+	padding-left: 30px;
+}
+.m5{
+	padding: 10px;
+	padding-left: 30px;
+}
+.card:hover{
+	box-shadow: 10px 10px 10px 10px black;
+}
+#name{
+	padding: 10px;
+	padding-left: 30px;
+	border: 2px solid black;
+}
+#m1,#m2,#m3,#m4,#m5{
+	padding: 10px;
+	/* padding-left: 40px; */
+	margin: 10px;
+	border: 2px solid black;
+}
+.search{
+	padding: 50px;
+	padding-left: 320px;
+	
+	/* border: 2px solid black; */
+
+}

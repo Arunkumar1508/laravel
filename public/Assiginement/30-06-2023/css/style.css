@@ -1,0 +1,38 @@
+/* .done{
+    text-decoration: line-through;
+    opacity: 0.5;
+} */ 
+body{
+    background-color: #232323;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    color: white;
+    background: steelblue;
+    margin: 0;
+}
+.square{
+    width: 30%;
+    background-color: aquamarine;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+}
+#container{
+    margin: 0 auto;
+    max-width: 600px;
+}
+/* span{
+    color: white;
+} */
+#stripe{
+    background: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+.selected{
+    background: rgb(219, 219, 253);
+    
+}

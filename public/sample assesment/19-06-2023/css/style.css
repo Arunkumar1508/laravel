@@ -1,0 +1,98 @@
+.h1{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(219, 113, 185), 0 0 5px darkblue;
+}
+ img{
+   
+    width: 253px;
+    border: 2px solid black;
+    
+ }
+ img:hover {
+    transform: scaleX(-1);
+  }
+
+ .dot {
+     border-bottom: dotted 2px black;
+ }
+
+ .dot1 {
+     padding-left: 40px;
+ }
+
+ .dot2 {
+    padding-left: 50px;
+
+ }
+
+ .dot3 {
+    padding-left: 20px;
+
+ }
+
+ .dot4 {
+    padding-left: 50px;
+
+ }
+
+ .dot5 {
+    padding-left: 20px;
+
+ }
+
+ .dot6 {
+    padding-left: 20px;
+
+ }
+ .progress{
+    margin: 10px;
+ }
+ 
+ .dot7,.dot8,.dot9{
+    border-bottom:dotted 2px white ; 
+    margin: 20px;
+ }
+
+.td1{
+    padding-left: 50px;
+    border-bottom:dotted 2px white ; 
+}
+.td2,.td3{
+    padding-left:50px;
+    border-bottom:dotted 2px white ; 
+}
+
+ .icons{
+    font-size: 40px;
+ }
+#exampleInputMessage{
+    height: 120px;
+    border-bottom: 2px solid white ; 
+}
+.button{
+ position: relative;
+ right: -70%;
+ margin: 30px;
+ border: 2px solid black;
+ background-color:rgb(85, 82, 105);
+}
+.oi{
+    position: relative;
+    margin-left: 210px ;
+    color:black
+}
+.oi1{
+    position: relative;
+    margin-left: 250px ;
+    color:black
+}
+.oi2{
+    position: relative;
+    margin-left: 230px ;
+    color:black
+}
+.oi3{
+    position: relative;
+    margin-left: 250px ;
+    color:black
+}

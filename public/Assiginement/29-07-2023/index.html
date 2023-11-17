@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular js</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <script src="./js/ajax.googleapis.com_ajax_libs_angularjs_1.8.2_angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+
+
+    <div>
+        <!-- WITHOUT EXPRESSION -->
+
+        <p>:::::::::::::::::::::hello welcome:::::::::::::::::::::</p>
+        <p>Name: <input type="text" ng-model="name"></p>
+        <p ng-bind="name"></p>
+
+
+
+
+
+
+        <div ng-init="firstName='Angel'">
+
+            <p>The name is::: <span ng-bind="firstName"></span></p>
+
+        </div>
+
+
+        <!--With Expression   -->
+
+
+        <div>
+            <p>My first expression: {{ 5 + 5 }}</p>
+        </div>
+        <div>
+
+            <p>Name: <input type="text" ng-model="name1"></p>
+            <p>{{name1}}</p>
+        </div>
+
+
+
+
+
+        <!-- input color changing -->
+        <!-- <div ng-init="myCol='pink'">
+
+            <input style="background-color:{{myCol}}" ng-model="myCol">
+
+        </div> -->
+
+        <!-- adddition and sub and mutiple etc -->
+        <div ng-init="multiply=4;cost=5">
+            <p>Total:{{multiply * cost}}</p>
+        </div>
+
+
+        <!-- adding controller -->
+
+        <div ng-app="myApp" ng-controller="myCtrl">
+            {{ firstName + " " + lastName }}
+        </div>
+
+
+
+
+        <div ng-controller="myconrtoler">
+            {{message}}
+        </div>
+
+        <br>
+
+        <div ng-controller="mycontroller">
+
+            <div>
+
+                name:{{employee.name}}
+            </div>
+            <div>
+                age: {{employee.age}}
+            </div>
+            <div>
+                place: {{employee.place}}
+            </div>
+            <div>
+                <img ng-src="{{employee.image}}" style="width:200px;height:80px;" alt="">
+            </div>
+        </div>
+
+        <!-- two way data binding -->
+
+        <div ng-controller="myconrtoler">
+            <input type="text" ng-model="message1">
+            <br><br>
+            {{message1}}
+        </div>
+
+
+        <!-- ng-repeat -->
+
+        <div ng-controller="mycontroller">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>firstName</th>
+                        <th>lastName</th>
+                        <th>gender</th>
+                        <th>salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- emp is new varaiable want to store the employees value in emp -->
+                    <tr ng-repeat="emp in employees">
+                        <td>{{emp.firstName }}</td>
+                        <br>
+                        <td>{{emp.lastName}}</td>
+                        <br>
+                        <td>{{emp.gender}}</td>
+                        <br>
+                        <td>{{emp.salary}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- nested looping ng-repeat -->
+        <br><br>
+        <div ng-controller="mycontrollers">
+            <ul>
+                <li ng-repeat="country in countries">
+                    {{country.name}} -Index ={{$index}}
+                    <ul>
+                        <li ng-repeat="city in country.cities">
+                            {{city.name}} Parent-Index={{$parent.$index}}, -Index ={{$index}}
+
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+
+        <br><br>     
+
+        <!-- filter using -->
+        <div ng-controller="mycontrollerss">
+            Rows to display: <input type="number" step="1" min="0" max="5" ng-model="rowLimit">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>DOB</th>
+                        <th>Gender</th>
+                        <th>Salary</th>
+                        <th>Salary</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="emp1 in employees2 | limitTo:rowLimit">
+                        <td>{{emp1.Name|uppercase}}</td>
+                        <td>{{emp1.DOB}}</td>
+                        <td>{{emp1.Gender|lowercase}}</td>
+                        <td>{{emp1.salary|currency}}</td>
+                        <td>{{emp1.salary1|number}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+<br><br>************************************************************************************************************************************************************************<br>    
+        <div ng-controller="mycontrollerss">
+          Order By:  <select ng-model="sortColumn" >
+            <option value="Name">NAME ASSE</option>
+            <option value="DOB">DOB ASSE</option>
+            <option value="Gender">GENDER ASSE</option>
+            <option value="-salary">SALARY ASSE</option>
+
+            </select>
+           
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>DOB</th>
+                        <th>Gender</th>
+                        <th>Salary</th>
+                        <!-- <th>Salary</th> -->
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="emp1 in employees2 | orderBy:sortColumn">
+                        <td>{{emp1.Name|uppercase}}</td>
+                        <td>{{emp1.DOB}}</td>
+                        <td>{{emp1.Gender|lowercase}}</td>
+                        <td>{{emp1.salary|currency}}</td>
+                        <!-- <td>{{emp1.salary1|number}}</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <!-- search filter  -->
+
+        <div ng-controller="mycontrolleerss">
+            Search: <input type="text" ng-model="searchText"placeholder="search name">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>DOB</th>
+                        <th>Gender</th>
+                        <th>Salary</th>
+                        <!-- <th>Salary</th> -->
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="emp1 in employees3 | filter:searchText">
+                        <td>{{emp1.Name|uppercase}}</td>
+                        <td>{{emp1.DOB}}</td>
+                        <td>{{emp1.Gender|lowercase}}</td>
+                        <td>{{emp1.salary}}</td>
+                        <!-- <td>{{emp1.salary1|number}}</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+<br><br>
+     
+<!-- <link rel="stylesheet" href="./js/students.json"> -->
+           <br>
+        <br>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<br><br><br>
+       
+<!-- custom filter -->
+
+
+<div ng-controller="mycontrollss">
+    <input type="checkbox" ng-model="hideGender"> Hide Gender
+    <br><br>
+    <!-- Search: <input type="text" ng-model="searchText"placeholder="search name"> -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>DOB</th>
+                <th ng-hide="hideGender">Gender</th>
+                <th>Salary</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in students">
+                <td>{{emp.Name|uppercase}}</td>
+                <td>{{emp.DOB}}</td>
+                <td ng-hide="hideGender">{{emp.Gender}}</td>
+                <td>{{emp.salary}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br><br><br><br><hr>             
+<div ng-controller="myscontrollss">
+   <p ></p> 
+    <table class="table">
+        <thead>
+           
+                <th>Name</th>
+                <th>id</th>
+                <th>m1</th>
+                <th>m2</th>
+                <th>m3</th>
+                <th>m4</th>
+                <th>m5</th>
+            
+        </thead>
+        <tbody>
+            <tr ng-repeat="std in content">
+                <td>{{std.name}}</td>
+                <td>{{std.id}}</td>
+                <td>{{std.m1}}</td>
+                <td>{{std.m2}}</td>
+                <td>{{std.m3}}</td>
+                <td>{{std.m4}}</td>
+                <td>{{std.m5}}</td>
+      
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br><br><br>
+<!-- custom services  -->
+
+<div ng-controller="my1qcontrollss">
+<table>
+    <tr>
+        <td>Your String</td>
+        <td><input type="text" ng-model="input"></td>
+    </tr>
+    <br>
+    <tr>
+        <td>Result</td>
+        <td><input type="text" ng-model="output"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" ng-click="transformstring(input)" value="process string">
+        </td>
+    </tr>
+</table>
+
+</div>
+<br><br><br>
+<div ng-controller="my1qcontrollss">
+{{val}}
+</div>
+
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>

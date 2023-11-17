@@ -1,0 +1,61 @@
+
+.card2{
+    background-color: #07aca0;
+}
+.card3{
+    background-color:  #27bab0;
+}
+.card4{
+    background-color:   #5acec6;
+}
+.icons1{
+    width: 230px;
+    padding-left: 100px;
+    font-size: 40px;
+}
+.icons2{
+    width: 200px;
+    padding-left: 100px;
+    font-size: 40px;
+}
+.icons3{
+    width: 200px;
+    padding-left: 100px;
+    font-size: 40px;
+}
+ .para1{
+    clip-path:circle();
+   
+}
+
+.cards{
+    border: 3px solid black;
+
+}
+.hl,.hl1,.hl2{
+    padding-left: 30px;
+}
+
+.bg-info1{
+    border: 2px solid black;
+}
+.text{
+    color: #07aca0;
+}
+.i-img{
+    width: 80px;
+    height: 40px;
+    opacity: 0.2;
+}
+@media (width <= 700px){
+    .mediaImage{
+        width: 300px;
+    }
+    .easy h2{
+        font-size: 15px;
+    }
+    .easy p{
+font-size: 10px;
+    }
+}
+

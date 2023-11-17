@@ -1,0 +1,9 @@
+.hlo1,.hlo2,.hlo3{
+    width: 100px;
+    height: 100px;
+    background: teal;
+    margin: 50px;
+    float: left;
+    text-align: center;
+    color: white;
+}

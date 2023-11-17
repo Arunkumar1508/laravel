@@ -1,0 +1,25 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+/* .table-style{
+    width: 350px;
+    height: 400px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+} */
+#hide{
+    display: none;
+}
+#insertval{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.container3{
+    border: 2px solid black;
+    width: 350px;
+    height: 600px;
+    overflow: auto;
+    box-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routing</title>
+    <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+    <table class="table">
+        <tbody>
+        <tr>
+            
+      
+        <td class="leftMenu">
+            <a href="#!/">Home</a>
+            <br><br>
+            <a href="#!/courses">Courses</a>
+            <br><br>
+            <a href="#!/students">Students</a>
+        </td>
+        <td class="mainContent">
+        </td>
+    </tr>
+</tbody>
+</table>
+
+<ng-view></ng-view>
+
+
+
+    <script src="./js/ajax.googleapis.com_ajax_libs_angularjs_1.8.2_angular.min.js"></script>
+    <script src="./js/code.angularjs.org_1.8.2_angular-route.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

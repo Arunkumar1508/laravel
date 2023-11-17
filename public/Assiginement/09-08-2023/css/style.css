@@ -1,0 +1,25 @@
+.you{
+    background-color: darkcyan;
+    width: 250px;
+    text-align: center;
+    color:rgb(145, 255, 0);
+}
+.leftMenu{
+    text-align:justify  ;
+    color: palegreen;
+   
+}
+.text{
+    background-color: darkseagreen;
+    width: 250px;
+}
+.text1{
+    background-color:indianred;
+    width: 80px;
+    text-align: center;
+}
+.text2{
+    background-color: gold;
+    width: 80px;
+    text-align: center;
+}
